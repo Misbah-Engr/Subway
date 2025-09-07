@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Subway Surfers</title>
+    <!-- This script is required for the page to work as a Telegram Mini App -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+        /* Basic reset to remove default margin and padding */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden; /* Prevents scrollbars from appearing */
+            background-color: #000; /* Black background for a clean look */
+        }
+        /* The iframe will hold the game and fill the entire screen */
+        #gameFrame {
+            width: 100%;
+            height: 100%;
+            border: none; /* Removes the default iframe border */
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <!-- The iframe will load the Subway Surfers game from the URL you provided -->
+    <iframe id="gameFrame" src="https://ubg77.github.io/updatefaqs/subway-surfers-nyc/" frameborder="0"></iframe>
+
+    <script>
+        // Initialize the Telegram Web App SDK
+        // This lets your app communicate with the Telegram client
+        window.Telegram.WebApp.ready();
+    </script>
+</body>
+</html>
